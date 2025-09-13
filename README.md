@@ -1,53 +1,35 @@
-📚 Projeto Biblioteca – Etapa 6
+# 📚 Projeto Biblioteca – Etapa 6  
 
-📌 Descrição
+Este projeto implementa um sistema simples de **cadastro e gerenciamento de usuários e bibliotecas** utilizando **Java com JPA (Hibernate)**.  
+A arquitetura foi organizada em camadas para facilitar manutenção, reutilização e boas práticas de desenvolvimento.
 
-Este projeto é a refatoração do sistema de Biblioteca desenvolvido na fase anterior em Java Desktop (Swing).
-O código foi reorganizado para preparar a migração para um sistema web, aplicando princípios SOLID e padrões de projeto.
+---
 
-O objetivo desta etapa é separar as responsabilidades, melhorar a manutenibilidade e deixar o código pronto para ser utilizado em frameworks modernos como Spring Boot.
+## 📂 Estrutura de Pacotes
 
-🗂 Estrutura de pacotes
+br.com.senac.controller → Controladores do sistema
+br.com.senac.dao → Classes de acesso a dados (DAO)
+br.com.senac.model → Classes de modelo (entidades JPA)
+br.com.senac.service → Regras de negócio e lógica de serviços
+br.com.senac.util → Utilitários (ex: JPAUtil)
 
-br.com.senac.controller   → Controladores (futuro uso no sistema web)
-br.com.senac.dao          → Classes DAO e interfaces de acesso a dados
-br.com.senac.model        → Entidades JPA (Biblioteca, Usuario)
-br.com.senac.service      → Camada de regras de negócio (BibliotecaService, UsuarioService)
-br.com.senac.util         → Classes utilitárias (ex.: JPAUtil)
-br.com.senac.app          → Classe Principal com método main() para testes
 
-✅ Funcionalidades
+## 🛠 Tecnologias Utilizadas
 
-Gerenciamento de Livros (Biblioteca):
+- **Java 17+**  
+- **JPA (Hibernate)**  
+- **NetBeans / IntelliJ** (IDE recomendada)  
+- **Banco de Dados Relacional** (MySQL, PostgreSQL, etc.)  
 
-Cadastrar, excluir e listar livros.
+---
 
-Filtro por gênero.
+## 📌 Funcionalidades Implementadas
 
-Gerenciamento de Usuários:
+✅ Cadastro de usuários  
+✅ Cadastro de bibliotecas  
+✅ DAO para manipulação de entidades no banco  
+✅ Services para regras de negócio  
+✅ Estrutura modular e organizada  
 
-Cadastro de usuários.
-
-Login com validação de credenciais.
-
-🔧 Tecnologias utilizadas
-
-Java 17+
-
-JPA / Hibernate
-
-Banco de Dados Relacional (MySQL, H2 ou outro configurado)
-
-Maven (para gerenciamento de dependências)
-
-📐 Princípios aplicados
-
-SRP (Responsabilidade Única): separação clara entre entidade, DAO, Service e Controller.
-
-OCP (Aberto/Fechado): fácil expansão sem alterar código existente.
-
-DIP (Inversão de Dependência): Services dependem de interfaces DAO.
-
-DAO Pattern: isolamento do acesso a dados.
-
-Service Layer Pattern: centralização da lógica de negócio.
+## 👨‍💻 Autor
+Projeto desenvolvido por **Leonardo – SENAC | Curso de Desenvolvimento de Sistemas*
