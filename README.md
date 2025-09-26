@@ -1,4 +1,4 @@
-# 📚 Projeto Biblioteca – Etapa 6  
+# 📚 Projeto Biblioteca 
 
 Este projeto implementa um sistema simples de **cadastro e gerenciamento de usuários e bibliotecas** utilizando **Java com JPA (Hibernate)**.  
 A arquitetura foi organizada em camadas para facilitar manutenção, reutilização e boas práticas de desenvolvimento.
