@@ -6,6 +6,9 @@ import br.com.senac.model.Usuario;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;
 import java.util.List;
+import br.com.senac.model.Usuario;
+import br.com.senac.dao.IUsuarioDAO;
+
 
 public class UsuarioDAO implements IUsuarioDAO {
 
